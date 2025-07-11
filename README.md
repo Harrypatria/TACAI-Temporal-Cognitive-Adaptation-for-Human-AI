@@ -79,10 +79,6 @@ flowchart TB
     B4 --> C1
     C4 --> D1
     D4 --> E[Research Outcomes]
-    
-    style A4 fill:#e1f5fe
-    style C4 fill:#f3e5f5
-    style D4 fill:#e8f5e8
 ```
 
 ### Dual-Process Theory in Temporal Cognition
@@ -121,12 +117,6 @@ graph TD
     J -->|REI-T-A > REI-T-E + 0.5| K[Analytical Style]
     J -->|REI-T-E > REI-T-A + 0.5| L[Experiential Style]
     J -->|Difference ≤ 0.5| M[Versatile Style]
-    
-    style C fill:#ffebee
-    style D fill:#e3f2fd
-    style K fill:#e8f5e8
-    style L fill:#fff3e0
-    style M fill:#f3e5f5
 ```
 
 ### Machine Learning Pipeline for Temporal Reasoning Detection
@@ -134,7 +124,7 @@ graph TD
 ```mermaid
 flowchart LR
     subgraph "Data Input"
-        A1[REI-T Responses<br/>44 Items × 7-Point Scale]
+        A1[REI-T Responses<br/>44 Items x 7-Point Scale]
         A2[Behavioral Data<br/>Timestamps, Interactions]
         A3[Performance Metrics<br/>Accuracy, Speed, Errors]
         A4[Cognitive Load<br/>NASA-TLX, Delays]
@@ -155,7 +145,7 @@ flowchart LR
     end
     
     subgraph "Ensemble Learning"
-        D1[Weighted Voting<br/>w₁×BERT + w₂×LSTM<br/>+ w₃×SVM + w₄×RF]
+        D1[Weighted Voting<br/>w1×BERT + w2×LSTM<br/>+ w3×SVM + w4×RF]
     end
     
     subgraph "Classification Output"
@@ -182,11 +172,6 @@ flowchart LR
     D1 --> E1
     D1 --> E2
     D1 --> E3
-    
-    style D1 fill:#e1f5fe
-    style E1 fill:#e8f5e8
-    style E2 fill:#fff3e0
-    style E3 fill:#f3e5f5
 ```
 
 ### Experimental Design: Temporal Adaptation Study
@@ -206,14 +191,14 @@ flowchart TB
     end
     
     subgraph "Control Condition"
-        C1[Standard Temporal Interface<br/>• Fixed timing displays<br/>• Static scheduling<br/>• No adaptation]
+        C1[Standard Temporal Interface<br/>Fixed timing displays<br/>Static scheduling<br/>No adaptation]
         C2[Task Performance<br/>Measurement]
         C3[Cognitive Load<br/>Assessment]
         C4[User Satisfaction<br/>Survey]
     end
     
     subgraph "Treatment Condition"
-        D1[Adaptive Temporal Interface<br/>• Dynamic timing displays<br/>• Style-based scheduling<br/>• Real-time adaptation]
+        D1[Adaptive Temporal Interface<br/>Dynamic timing displays<br/>Style-based scheduling<br/>Real-time adaptation]
         D2[Task Performance<br/>Measurement]
         D3[Cognitive Load<br/>Assessment]
         D4[User Satisfaction<br/>Survey]
@@ -221,16 +206,16 @@ flowchart TB
     
     subgraph "Adaptation Algorithm"
         E1{Temporal Style}
-        E1 -->|Analytical| E2[High Structure<br/>• Explicit timelines<br/>• Detailed scheduling<br/>• Quantified buffers]
-        E1 -->|Experiential| E3[High Flexibility<br/>• Natural rhythms<br/>• Adaptive timing<br/>• Contextual cues]
-        E1 -->|Versatile| E4[Balanced Approach<br/>• Moderate structure<br/>• Some flexibility<br/>• User choice]
+        E1 -->|Analytical| E2[High Structure<br/>Explicit timelines<br/>Detailed scheduling<br/>Quantified buffers]
+        E1 -->|Experiential| E3[High Flexibility<br/>Natural rhythms<br/>Adaptive timing<br/>Contextual cues]
+        E1 -->|Versatile| E4[Balanced Approach<br/>Moderate structure<br/>Some flexibility<br/>User choice]
     end
     
     subgraph "Outcome Measures"
-        F1[Performance Metrics<br/>• Task accuracy<br/>• Completion time<br/>• Error rates]
-        F2[Cognitive Load<br/>• NASA-TLX scores<br/>• Mental effort<br/>• Workload distribution]
-        F3[User Experience<br/>• Satisfaction ratings<br/>• Trust measures<br/>• Preference scores]
-        F4[Temporal Adaptation<br/>Effectiveness Score<br/>TAE = Σ(wᵢ × metricᵢ)]
+        F1[Performance Metrics<br/>Task accuracy<br/>Completion time<br/>Error rates]
+        F2[Cognitive Load<br/>NASA-TLX scores<br/>Mental effort<br/>Workload distribution]
+        F3[User Experience<br/>Satisfaction ratings<br/>Trust measures<br/>Preference scores]
+        F4[Temporal Adaptation<br/>Effectiveness Score<br/>TAE Combined Metrics]
     end
     
     A1 --> A2 --> A3 --> B1
@@ -251,10 +236,6 @@ flowchart TB
     F1 --> F4
     F2 --> F4
     F3 --> F4
-    
-    style A3 fill:#e1f5fe
-    style E1 fill:#f3e5f5
-    style F4 fill:#e8f5e8
 ```
 
 ### Temporal Behavioral Analysis Pipeline
@@ -269,21 +250,21 @@ flowchart TB
     end
     
     subgraph "Temporal Pattern Extraction"
-        B1[Inter-Prompt Intervals<br/>μ_IPI, σ_IPI, TRI]
+        B1[Inter-Prompt Intervals<br/>Mean, Standard Dev, TRI]
         B2[Rhythm Analysis<br/>FFT, Spectral Entropy]
         B3[Coordination Patterns<br/>Sequential Dependencies]
         B4[Adaptation Dynamics<br/>Learning Curves, Drift]
     end
     
     subgraph "Cognitive Load Analysis"
-        C1[Load Function<br/>CL(t) = Σ(wᵢ × metricᵢ)]
+        C1[Load Function<br/>Combined Weighted Metrics]
         C2[Load Distribution<br/>Integral, Variance, Peaks]
-        C3[Load Smoothness<br/>1 - (σ_CL / μ_CL)]
+        C3[Load Smoothness<br/>Variance to Mean Ratio]
         C4[Adaptation Efficiency<br/>Load Reduction Rate]
     end
     
     subgraph "Style Recognition"
-        D1[Feature Vector<br/>F_temporal = [μ_IPI, σ_IPI, TRI, ...]
+        D1[Feature Vector<br/>Temporal Feature Array]
         D2[ML Classification<br/>Ensemble Models]
         D3[Confidence Score<br/>Prediction Reliability]
         D4[Style Update<br/>Dynamic Recalibration]
@@ -328,10 +309,6 @@ flowchart TB
     F3 --> F4
     
     F4 --> D4
-    
-    style D2 fill:#e1f5fe
-    style E1 fill:#f3e5f5
-    style F4 fill:#e8f5e8
 ```
 
 ### Research Validation Framework
@@ -339,7 +316,7 @@ flowchart TB
 ```mermaid
 graph TB
     subgraph "Psychometric Validation"
-        A1[Reliability Testing<br/>Cronbach's α, Test-Retest]
+        A1[Reliability Testing<br/>Cronbach Alpha, Test-Retest]
         A2[Construct Validity<br/>Factor Analysis, CFA]
         A3[Convergent Validity<br/>External Measures]
         A4[Discriminant Validity<br/>Independence Tests]
@@ -355,8 +332,8 @@ graph TB
     subgraph "Experimental Validation"
         C1[Pre-Post Analysis<br/>Within-Subject Changes]
         C2[Between-Group Analysis<br/>Control vs Treatment]
-        C3[Effect Size Calculation<br/>Cohen's d, η²]
-        C4[Statistical Significance<br/>p-values, Confidence Intervals]
+        C3[Effect Size Calculation<br/>Cohen d, Eta Squared]
+        C4[Statistical Significance<br/>P-values, Confidence Intervals]
     end
     
     subgraph "Practical Validation"
@@ -392,11 +369,6 @@ graph TB
     D2 --> E4
     D3 --> E4
     D4 --> E4
-    
-    style E1 fill:#e8f5e8
-    style E2 fill:#e1f5fe
-    style E3 fill:#fff3e0
-    style E4 fill:#f3e5f5
 ```
 
 ### Temporal Reasoning Dimensions
