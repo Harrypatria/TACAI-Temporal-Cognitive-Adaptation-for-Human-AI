@@ -47,21 +47,47 @@ The **Rational Experiential Inventory - Temporal (REI-T)** represents a novel ps
 
 ## 🔬 Theoretical Foundation
 
-### Dual-Process Theory in Temporal Cognition
+## 📊 Research Methodology & System Architecture
+
+### Overall Research Pipeline
 
 The REI-T is grounded in the fundamental distinction between **System 1** (fast, automatic, experiential) and **System 2** (slow, deliberate, analytical) cognitive processes, specifically applied to temporal reasoning:
 
 ```mermaid
-graph TD
-    A[Temporal Stimulus] --> B{Processing Mode}
-    B -->|System 1| C[Experiential Processing]
-    B -->|System 2| D[Analytical Processing]
-    C --> E[Intuitive Temporal Judgments]
-    D --> F[Systematic Temporal Analysis]
-    E --> G[REI-T-E Score]
-    F --> H[REI-T-A Score]
-    G --> I[Temporal Cognitive Style]
-    H --> I
+graph TB
+    subgraph "Phase 1: Assessment & Data Collection"
+        A[REI-T Survey Administration] --> B[Temporal Behavior Logging]
+        B --> C[Cognitive Load Monitoring]
+        C --> D[Multi-Modal Data Integration]
+    end
+    
+    subgraph "Phase 2: Machine Learning Development"
+        D --> E[Feature Engineering]
+        E --> F[Temporal Pattern Analysis]
+        F --> G[ML Model Training]
+        G --> H[Style Classification Model]
+    end
+    
+    subgraph "Phase 3: AI System Adaptation"
+        H --> I[Temporal Cognitive Profiling]
+        I --> J[Adaptive Interface Design]
+        J --> K[Personalized AI System]
+    end
+    
+    subgraph "Phase 4: Experimental Validation"
+        K --> L[Controlled Experiment Design]
+        L --> M[With Temporal Adaptation]
+        L --> N[Without Temporal Adaptation]
+        M --> O[Performance Metrics]
+        N --> O
+        O --> P[Statistical Analysis]
+        P --> Q[Research Conclusions]
+    end
+    
+    style A fill:#e1f5fe
+    style H fill:#f3e5f5
+    style K fill:#e8f5e8
+    style Q fill:#fff3e0
 ```
 
 ### Temporal Reasoning Dimensions
