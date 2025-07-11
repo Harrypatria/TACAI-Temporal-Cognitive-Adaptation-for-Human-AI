@@ -47,47 +47,356 @@ The **Rational Experiential Inventory - Temporal (REI-T)** represents a novel ps
 
 ## 🔬 Theoretical Foundation
 
-## 📊 Research Methodology & System Architecture
+### Overall Research Framework
 
-### Overall Research Pipeline
+```mermaid
+flowchart TB
+    subgraph "Phase 1: Assessment Development"
+        A1[Literature Review] --> A2[Item Development]
+        A2 --> A3[Expert Validation]
+        A3 --> A4[REI-T Scale Creation]
+    end
+    
+    subgraph "Phase 2: Data Collection"
+        B1[CS Survey Administration] --> B2[Temporal Behavior Logging]
+        B2 --> B3[Cognitive Load Measurement]
+        B3 --> B4[Performance Metrics]
+    end
+    
+    subgraph "Phase 3: ML Development"
+        C1[Feature Engineering] --> C2[Model Training]
+        C2 --> C3[Temporal Style Classification]
+        C3 --> C4[Adaptation Algorithm]
+    end
+    
+    subgraph "Phase 4: Experimental Validation"
+        D1[Control Group<br/>No Adaptation] --> D2[Treatment Group<br/>Temporal Adaptation]
+        D2 --> D3[Performance Comparison]
+        D3 --> D4[Effectiveness Analysis]
+    end
+    
+    A4 --> B1
+    B4 --> C1
+    C4 --> D1
+    D4 --> E[Research Outcomes]
+    
+    style A4 fill:#e1f5fe
+    style C4 fill:#f3e5f5
+    style D4 fill:#e8f5e8
+```
+
+### Dual-Process Theory in Temporal Cognition
 
 The REI-T is grounded in the fundamental distinction between **System 1** (fast, automatic, experiential) and **System 2** (slow, deliberate, analytical) cognitive processes, specifically applied to temporal reasoning:
 
 ```mermaid
-graph TB
-    subgraph "Phase 1: Assessment & Data Collection"
-        A[REI-T Survey Administration] --> B[Temporal Behavior Logging]
-        B --> C[Cognitive Load Monitoring]
-        C --> D[Multi-Modal Data Integration]
-    end
+graph TD
+    A[Temporal Stimulus] --> B{Processing Mode}
+    B -->|System 1| C[Experiential Processing]
+    B -->|System 2| D[Analytical Processing]
     
-    subgraph "Phase 2: Machine Learning Development"
-        D --> E[Feature Engineering]
-        E --> F[Temporal Pattern Analysis]
-        F --> G[ML Model Training]
-        G --> H[Style Classification Model]
-    end
+    C --> C1[Pattern Recognition]
+    C --> C2[Intuitive Timing]
+    C --> C3[Holistic Rhythm]
     
-    subgraph "Phase 3: AI System Adaptation"
-        H --> I[Temporal Cognitive Profiling]
-        I --> J[Adaptive Interface Design]
-        J --> K[Personalized AI System]
-    end
+    D --> D1[Mathematical Calculation]
+    D --> D2[Systematic Analysis]
+    D --> D3[Logical Sequencing]
     
-    subgraph "Phase 4: Experimental Validation"
-        K --> L[Controlled Experiment Design]
-        L --> M[With Temporal Adaptation]
-        L --> N[Without Temporal Adaptation]
-        M --> O[Performance Metrics]
-        N --> O
-        O --> P[Statistical Analysis]
-        P --> Q[Research Conclusions]
-    end
+    C1 --> E[Intuitive Temporal Judgments]
+    C2 --> E
+    C3 --> E
     
-    style A fill:#e1f5fe
-    style H fill:#f3e5f5
+    D1 --> F[Systematic Temporal Analysis]
+    D2 --> F
+    D3 --> F
+    
+    E --> G[REI-T-E Score]
+    F --> H[REI-T-A Score]
+    
+    G --> I[Temporal Cognitive Style]
+    H --> I
+    
+    I --> J{Style Classification}
+    J -->|REI-T-A > REI-T-E + 0.5| K[Analytical Style]
+    J -->|REI-T-E > REI-T-A + 0.5| L[Experiential Style]
+    J -->|Difference ≤ 0.5| M[Versatile Style]
+    
+    style C fill:#ffebee
+    style D fill:#e3f2fd
     style K fill:#e8f5e8
-    style Q fill:#fff3e0
+    style L fill:#fff3e0
+    style M fill:#f3e5f5
+```
+
+### Machine Learning Pipeline for Temporal Reasoning Detection
+
+```mermaid
+flowchart LR
+    subgraph "Data Input"
+        A1[REI-T Responses<br/>44 Items × 7-Point Scale]
+        A2[Behavioral Data<br/>Timestamps, Interactions]
+        A3[Performance Metrics<br/>Accuracy, Speed, Errors]
+        A4[Cognitive Load<br/>NASA-TLX, Delays]
+    end
+    
+    subgraph "Feature Engineering"
+        B1[Temporal Features<br/>IPI, Regularity, Rhythm]
+        B2[Behavioral Features<br/>Coordination, Adaptation]
+        B3[Performance Features<br/>Error Patterns, Speed]
+        B4[Load Features<br/>Peak, Variance, Smoothness]
+    end
+    
+    subgraph "ML Models"
+        C1[BERT<br/>Text Analysis]
+        C2[LSTM<br/>Temporal Sequences]
+        C3[SVM<br/>Behavioral Patterns]
+        C4[Random Forest<br/>Combined Features]
+    end
+    
+    subgraph "Ensemble Learning"
+        D1[Weighted Voting<br/>w₁×BERT + w₂×LSTM<br/>+ w₃×SVM + w₄×RF]
+    end
+    
+    subgraph "Classification Output"
+        E1[Analytical<br/>Temporal Style]
+        E2[Experiential<br/>Temporal Style]
+        E3[Versatile<br/>Temporal Style]
+    end
+    
+    A1 --> B1
+    A2 --> B1 & B2
+    A3 --> B3
+    A4 --> B4
+    
+    B1 --> C1 & C2 & C3 & C4
+    B2 --> C1 & C2 & C3 & C4
+    B3 --> C1 & C2 & C3 & C4
+    B4 --> C1 & C2 & C3 & C4
+    
+    C1 --> D1
+    C2 --> D1
+    C3 --> D1
+    C4 --> D1
+    
+    D1 --> E1
+    D1 --> E2
+    D1 --> E3
+    
+    style D1 fill:#e1f5fe
+    style E1 fill:#e8f5e8
+    style E2 fill:#fff3e0
+    style E3 fill:#f3e5f5
+```
+
+### Experimental Design: Temporal Adaptation Study
+
+```mermaid
+flowchart TB
+    subgraph "Participant Recruitment"
+        A1[Target Population<br/>N = 300 Participants]
+        A2[REI-T Administration<br/>Baseline Assessment]
+        A3[Temporal Style Classification<br/>ML Pipeline Results]
+    end
+    
+    subgraph "Random Assignment"
+        B1{Random Assignment<br/>1:1 Ratio}
+        B1 -->|n=150| B2[Control Group<br/>Standard Interface]
+        B1 -->|n=150| B3[Treatment Group<br/>Adaptive Interface]
+    end
+    
+    subgraph "Control Condition"
+        C1[Standard Temporal Interface<br/>• Fixed timing displays<br/>• Static scheduling<br/>• No adaptation]
+        C2[Task Performance<br/>Measurement]
+        C3[Cognitive Load<br/>Assessment]
+        C4[User Satisfaction<br/>Survey]
+    end
+    
+    subgraph "Treatment Condition"
+        D1[Adaptive Temporal Interface<br/>• Dynamic timing displays<br/>• Style-based scheduling<br/>• Real-time adaptation]
+        D2[Task Performance<br/>Measurement]
+        D3[Cognitive Load<br/>Assessment]
+        D4[User Satisfaction<br/>Survey]
+    end
+    
+    subgraph "Adaptation Algorithm"
+        E1{Temporal Style}
+        E1 -->|Analytical| E2[High Structure<br/>• Explicit timelines<br/>• Detailed scheduling<br/>• Quantified buffers]
+        E1 -->|Experiential| E3[High Flexibility<br/>• Natural rhythms<br/>• Adaptive timing<br/>• Contextual cues]
+        E1 -->|Versatile| E4[Balanced Approach<br/>• Moderate structure<br/>• Some flexibility<br/>• User choice]
+    end
+    
+    subgraph "Outcome Measures"
+        F1[Performance Metrics<br/>• Task accuracy<br/>• Completion time<br/>• Error rates]
+        F2[Cognitive Load<br/>• NASA-TLX scores<br/>• Mental effort<br/>• Workload distribution]
+        F3[User Experience<br/>• Satisfaction ratings<br/>• Trust measures<br/>• Preference scores]
+        F4[Temporal Adaptation<br/>Effectiveness Score<br/>TAE = Σ(wᵢ × metricᵢ)]
+    end
+    
+    A1 --> A2 --> A3 --> B1
+    
+    B2 --> C1 --> C2 --> F1
+    C1 --> C3 --> F2
+    C1 --> C4 --> F3
+    
+    B3 --> D1 --> D2 --> F1
+    D1 --> D3 --> F2
+    D1 --> D4 --> F3
+    
+    A3 --> E1
+    E2 --> D1
+    E3 --> D1
+    E4 --> D1
+    
+    F1 --> F4
+    F2 --> F4
+    F3 --> F4
+    
+    style A3 fill:#e1f5fe
+    style E1 fill:#f3e5f5
+    style F4 fill:#e8f5e8
+```
+
+### Temporal Behavioral Analysis Pipeline
+
+```mermaid
+flowchart TB
+    subgraph "Real-Time Data Collection"
+        A1[User Interactions<br/>Timestamps, Clicks, Inputs]
+        A2[System Responses<br/>Processing Times, Delays]
+        A3[Task Context<br/>Complexity, Requirements]
+        A4[Environmental Factors<br/>Time of Day, Workload]
+    end
+    
+    subgraph "Temporal Pattern Extraction"
+        B1[Inter-Prompt Intervals<br/>μ_IPI, σ_IPI, TRI]
+        B2[Rhythm Analysis<br/>FFT, Spectral Entropy]
+        B3[Coordination Patterns<br/>Sequential Dependencies]
+        B4[Adaptation Dynamics<br/>Learning Curves, Drift]
+    end
+    
+    subgraph "Cognitive Load Analysis"
+        C1[Load Function<br/>CL(t) = Σ(wᵢ × metricᵢ)]
+        C2[Load Distribution<br/>Integral, Variance, Peaks]
+        C3[Load Smoothness<br/>1 - (σ_CL / μ_CL)]
+        C4[Adaptation Efficiency<br/>Load Reduction Rate]
+    end
+    
+    subgraph "Style Recognition"
+        D1[Feature Vector<br/>F_temporal = [μ_IPI, σ_IPI, TRI, ...]
+        D2[ML Classification<br/>Ensemble Models]
+        D3[Confidence Score<br/>Prediction Reliability]
+        D4[Style Update<br/>Dynamic Recalibration]
+    end
+    
+    subgraph "Interface Adaptation"
+        E1{Adaptation Decision}
+        E1 -->|High Confidence| E2[Full Adaptation<br/>Complete Style Match]
+        E1 -->|Medium Confidence| E3[Partial Adaptation<br/>Conservative Adjustment]
+        E1 -->|Low Confidence| E4[No Adaptation<br/>Maintain Current State]
+    end
+    
+    subgraph "Effectiveness Monitoring"
+        F1[Performance Tracking<br/>Accuracy, Speed, Errors]
+        F2[Satisfaction Monitoring<br/>User Feedback, Trust]
+        F3[Load Assessment<br/>Cognitive Burden Changes]
+        F4[TAE Calculation<br/>Overall Benefit Score]
+    end
+    
+    A1 --> B1 & B3
+    A2 --> B1 & B4
+    A3 --> B2 & B3
+    A4 --> B2 & B4
+    
+    B1 --> C1 & D1
+    B2 --> C1 & D1
+    B3 --> C2 & D1
+    B4 --> C3 & D1
+    
+    C1 --> C4
+    C2 --> C4
+    C3 --> C4
+    
+    D1 --> D2 --> D3 --> D4 --> E1
+    
+    E2 --> F1 & F2 & F3
+    E3 --> F1 & F2 & F3
+    E4 --> F1 & F2 & F3
+    
+    F1 --> F4
+    F2 --> F4
+    F3 --> F4
+    
+    F4 --> D4
+    
+    style D2 fill:#e1f5fe
+    style E1 fill:#f3e5f5
+    style F4 fill:#e8f5e8
+```
+
+### Research Validation Framework
+
+```mermaid
+graph TB
+    subgraph "Psychometric Validation"
+        A1[Reliability Testing<br/>Cronbach's α, Test-Retest]
+        A2[Construct Validity<br/>Factor Analysis, CFA]
+        A3[Convergent Validity<br/>External Measures]
+        A4[Discriminant Validity<br/>Independence Tests]
+    end
+    
+    subgraph "ML Model Validation"
+        B1[Cross-Validation<br/>K-Fold, Stratified]
+        B2[Performance Metrics<br/>Accuracy, Precision, Recall]
+        B3[Feature Importance<br/>Temporal Relevance]
+        B4[Generalization<br/>Test Set Performance]
+    end
+    
+    subgraph "Experimental Validation"
+        C1[Pre-Post Analysis<br/>Within-Subject Changes]
+        C2[Between-Group Analysis<br/>Control vs Treatment]
+        C3[Effect Size Calculation<br/>Cohen's d, η²]
+        C4[Statistical Significance<br/>p-values, Confidence Intervals]
+    end
+    
+    subgraph "Practical Validation"
+        D1[Real-World Testing<br/>Field Studies]
+        D2[User Acceptance<br/>Technology Adoption]
+        D3[Cost-Benefit Analysis<br/>Implementation ROI]
+        D4[Scalability Assessment<br/>System Performance]
+    end
+    
+    subgraph "Research Outcomes"
+        E1[Theoretical Contribution<br/>Temporal Cognition Theory]
+        E2[Methodological Innovation<br/>Assessment Tools]
+        E3[Practical Applications<br/>Adaptive Systems]
+        E4[Future Directions<br/>Research Extensions]
+    end
+    
+    A1 --> E1
+    A2 --> E1
+    A3 --> E2
+    A4 --> E2
+    
+    B1 --> E2
+    B2 --> E3
+    B3 --> E2
+    B4 --> E3
+    
+    C1 --> E3
+    C2 --> E3
+    C3 --> E1
+    C4 --> E1
+    
+    D1 --> E3
+    D2 --> E4
+    D3 --> E4
+    D4 --> E4
+    
+    style E1 fill:#e8f5e8
+    style E2 fill:#e1f5fe
+    style E3 fill:#fff3e0
+    style E4 fill:#f3e5f5
 ```
 
 ### Temporal Reasoning Dimensions
@@ -748,7 +1057,8 @@ If you use the REI-T Assessment Protocol in your research, please cite:
   pages={XX-XX},
   year={2024},
   publisher={Academic Press},
-  doi={10.1000/rei-t-temporal}
+  doi={10.1000/rei-t-temporal},
+  note={CEO, Chief Data AI at Patria \& Co.}
 }
 ```
 
