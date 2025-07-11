@@ -164,16 +164,16 @@ $$\text{EE}_{\text{Experiential}} = \frac{1}{7}\sum_{i=38}^{44} \text{EE}_{\text
 #### Inter-Prompt Interval Analysis
 
 **Mean Inter-Prompt Interval:**
-$$\mu_{\text{IPI},i} = \frac{1}{n_i}\sum_{j=1}^{n_i-1} \left(t_{\text{prompt},i}^{(j+1)} - t_{\text{prompt},i}^{(j)}\right)$$
+$\mu_{\text{IPI},i} = \frac{1}{n_i-1}\sum_{j=1}^{n_i-1} \left(t_{\text{prompt},i}^{(j+1)} - t_{\text{prompt},i}^{(j)}\right)$
 
 **Temporal Variance:**
-$$\sigma_{\text{IPI},i}^2 = \frac{1}{n_i-2} \sum_{j=1}^{n_i-1} \left(\text{IPI}_i^{(j)} - \mu_{\text{IPI},i}\right)^2$$
+$\sigma_{\text{IPI},i}^2 = \frac{1}{n_i-2} \sum_{j=1}^{n_i-1} \left(\text{IPI}_i^{(j)} - \mu_{\text{IPI},i}\right)^2$
 
 **Temporal Regularity Index:**
-$$\text{TRI}_i = 1 - \left(\frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}\right)$$
+$\text{TRI}_i = 1 - \left(\frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}\right)$
 
 **Coefficient of Variation:**
-$$\text{CV}_i = \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}$$
+$\text{CV}_i = \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}$
 
 Where:
 - $n_i$ = total number of prompts by individual $i$
@@ -187,19 +187,19 @@ Where:
 #### Discrete Fourier Transform Analysis
 
 **Temporal Predictability:**
-$$\text{Temporal Predictability}_i(f) = \left|\text{DFT}\{\text{IPI}_{\text{sequence}_i}\}(f)\right|^2$$
+$\text{Temporal Predictability}_i(f) = \left|\text{DFT}\{\text{IPI}_{\text{sequence}_i}\}(f)\right|^2$
 
 **Dominant Frequency Detection:**
-$$\text{Dominant Frequency}_i = \arg\max_f \left[\text{Rhythm Strength}_i(f)\right]$$
+$\text{Dominant Frequency}_i = \arg\max_f \left[\text{Rhythm Strength}_i(f)\right]$
 
 **Temporal Predictability Metric:**
-$$\text{Temporal Predictability}_i = \frac{\max_f\left[\text{Rhythm Strength}_i(f)\right]}{\sum_f\left[\text{Rhythm Strength}_i(f)\right]}$$
+$\text{Temporal Predictability}_i = \frac{\max_f\left[\text{Rhythm Strength}_i(f)\right]}{\sum_f\left[\text{Rhythm Strength}_i(f)\right]}$
 
 **Spectral Entropy:**
-$$\text{Spectral Entropy}_i = -\sum_f P_i(f) \times \log_2\left(P_i(f)\right)$$
+$\text{Spectral Entropy}_i = -\sum_f P_i(f) \times \log_2\left(P_i(f)\right)$
 
 Where:
-$$P_i(f) = \frac{\text{Rhythm Strength}_i(f)}{\sum_f\left[\text{Rhythm Strength}_i(f)\right]}$$
+$P_i(f) = \frac{\text{Rhythm Strength}_i(f)}{\sum_f\left[\text{Rhythm Strength}_i(f)\right]}$
 
 ---
 
@@ -207,21 +207,21 @@ $$P_i(f) = \frac{\text{Rhythm Strength}_i(f)}{\sum_f\left[\text{Rhythm Strength}
 
 #### Temporal Cognitive Load Function
 
-$$\text{CL}_{\text{temporal},i}(t) = w_1 \times \text{NASA-TLX}_i(t) + w_2 \times \text{Response Delay}_i(t) + w_3 \times \text{Error Rate}_i(t) + w_4 \times \text{Revision Frequency}_i(t)$$
+$\text{CL}_{\text{temporal},i}(t) = w_1 \times \text{NASA-TLX}_i(t) + w_2 \times \text{Response Delay}_i(t) + w_3 \times \text{Error Rate}_i(t) + w_4 \times \text{Revision Frequency}_i(t)$
 
 #### Derived Load Metrics
 
 **Integral Cognitive Load:**
-$$\text{CL}_{\text{integral},i} = \frac{1}{T_i}\int_0^{T_i} \text{CL}_{\text{temporal},i}(t) \, dt$$
+$\text{CL}_{\text{integral},i} = \frac{1}{T_i}\int_0^{T_i} \text{CL}_{\text{temporal},i}(t) \, dt$
 
 **Load Variance:**
-$$\text{CL}_{\text{variance},i} = \frac{1}{T_i}\int_0^{T_i} \left(\text{CL}_{\text{temporal},i}(t) - \text{CL}_{\text{integral},i}\right)^2 dt$$
+$\text{CL}_{\text{variance},i} = \frac{1}{T_i}\int_0^{T_i} \left(\text{CL}_{\text{temporal},i}(t) - \text{CL}_{\text{integral},i}\right)^2 dt$
 
 **Peak Load:**
-$$\text{Peak Load}_i = \max_t\left[\text{CL}_{\text{temporal},i}(t)\right]$$
+$\text{Peak Load}_i = \max_t\left[\text{CL}_{\text{temporal},i}(t)\right]$
 
 **Load Smoothness:**
-$$\text{Load Smoothness}_i = 1 - \frac{\sigma_{\text{CL},i}}{\mu_{\text{CL},i}}$$
+$\text{Load Smoothness}_i = 1 - \frac{\sigma_{\text{CL},i}}{\mu_{\text{CL},i}}$
 
 ---
 
@@ -704,8 +704,9 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 **Principal Investigator**: Dr. Harry Patria  
 **Institution**: MS Business Analytics at Imperial College London  
-**Email**: [harry.patria@imperial.ac.uk]  
-**ORCID**: [0000-0000-0000-0000]
+**Title**: CEO, Chief Data AI at Patria & Co.  
+**Email**: [harry.patria23@imperial.ac.uk](mailto:harry.patria23@imperial.ac.uk)  
+**ORCID**: [0000-0002-7844-538X](https://orcid.org/my-orcid?orcid=0000-0002-7844-538X)
 
 ## 📖 Citation
 
