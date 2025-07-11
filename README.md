@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![DOI](https://img.shields.io/badge/DOI-10.1000%2Freit--temporal-blue.svg)](https://doi.org/10.1000/reit-temporal)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/your-repo/rei-t)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-green.svg)](https://codecov.io/gh/your-repo/rei-t)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/Harrypatria/REI-T-Assessment)
+[![Coverage](https://img.shields.io/badge/coverage-95%25-green.svg)](https://codecov.io/gh/Harrypatria/REI-T-Assessment)
 
 > **Advanced Psychometric Assessment for Temporal Cognitive Processing Styles**
 >
@@ -117,37 +117,37 @@ All items utilize a **7-point Likert scale**:
 
 #### Analytical Temporal Processing Score
 
-$$\text{REI}_{T-A} = \frac{1}{22}\sum_{i=1}^{22} A_{\text{item}_i}$$
+$\text{REI}_{T-A} = \frac{1}{22}\sum_{i=1}^{22} A_{\text{item}_i}$
 
 Where $A_{\text{item}_i}$ represents the response to analytical item $i$.
 
 #### Experiential Temporal Processing Score
 
-$$\text{REI}_{T-E} = \frac{1}{22}\sum_{i=1}^{22} E_{\text{item}_i}$$
+$\text{REI}_{T-E} = \frac{1}{22}\sum_{i=1}^{22} E_{\text{item}_i}$
 
 Where $E_{\text{item}_i}$ represents the response to experiential item $i$.
 
 #### Temporal Processing Difference Score
 
-$$\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}$$
+$\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}$
 
 #### Temporal Cognitive Style Classification
 
-$$\text{Temporal Style} = \begin{cases}
+$\text{Temporal Style} = \begin{cases}
 \text{Analytical} & \text{if } \text{REI}_{T-A} > \text{REI}_{T-E} + 0.5 \\
 \text{Experiential} & \text{if } \text{REI}_{T-E} > \text{REI}_{T-A} + 0.5 \\
 \text{Versatile} & \text{if } |\text{REI}_{T-A} - \text{REI}_{T-E}| \leq 0.5
-\end{cases}$$
+\end{cases}$
 
 ### Subscale Decomposition
 
 #### Analytical Subscales
 
-$$\text{TT}_{\text{Analytical}} = \frac{1}{8}\sum_{i=1}^{8} \text{TT}_{\text{item}_i}$$
+$\text{TT}_{\text{Analytical}} = \frac{1}{8}\sum_{i=1}^{8} \text{TT}_{\text{item}_i}$
 
-$$\text{TE}_{\text{Analytical}} = \frac{1}{7}\sum_{i=9}^{15} \text{TE}_{\text{item}_i}$$
+$\text{TE}_{\text{Analytical}} = \frac{1}{7}\sum_{i=9}^{15} \text{TE}_{\text{item}_i}$
 
-$$\text{EE}_{\text{Analytical}} = \frac{1}{7}\sum_{i=16}^{22} \text{EE}_{\text{item}_i}$$
+$\text{EE}_{\text{Analytical}} = \frac{1}{7}\sum_{i=16}^{22} \text{EE}_{\text{item}_i}$
 
 #### Experiential Subscales
 
@@ -229,13 +229,13 @@ $$\text{Load Smoothness}_i = 1 - \frac{\sigma_{\text{CL},i}}{\mu_{\text{CL},i}}$
 
 #### Ensemble Classification Framework
 
-$$P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i)$$
+$P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i)$
 
 **Constraint:** $\sum_{k=1}^4 w_k = 1, \quad w_k \geq 0$
 
 #### Temporal Feature Vector
 
-$$\mathbf{F}_{\text{temporal},i} = \begin{bmatrix}
+$\mathbf{F}_{\text{temporal},i} = \begin{bmatrix}
 \mu_{\text{IPI},i} \\
 \sigma_{\text{IPI},i} \\
 \text{TRI}_i \\
@@ -248,7 +248,7 @@ $$\mathbf{F}_{\text{temporal},i} = \begin{bmatrix}
 \text{Spectral Entropy}_i \\
 \text{Peak Load}_i \\
 \text{Load Smoothness}_i
-\end{bmatrix}$$
+\end{bmatrix}$
 
 #### Temporal Adaptation Effectiveness (TAE)
 
@@ -702,9 +702,9 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📧 Contact
 
-**Principal Investigator**: Dr. [Your Name]  
-**Institution**: [Your Institution]  
-**Email**: [your.email@institution.edu]  
+**Principal Investigator**: Dr. Harry Patria  
+**Institution**: MS Business Analytics at Imperial College London  
+**Email**: [harry.patria@imperial.ac.uk]  
 **ORCID**: [0000-0000-0000-0000]
 
 ## 📖 Citation
@@ -714,7 +714,7 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 ```bibtex
 @article{rei_t_2024,
   title={The Rational Experiential Inventory-Temporal (REI-T): A Novel Assessment of Individual Differences in Temporal Processing Styles},
-  author={[Author Names]},
+  author={Patria, Harry},
   journal={Journal of Temporal Cognition and Human-Computer Interaction},
   volume={X},
   number={X},
@@ -732,7 +732,23 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 **🔬 REI-T Assessment Protocol**  
 *Advancing the Science of Temporal Cognition*
 
-[![GitHub stars](https://img.shields.io/github/stars/your-repo/rei-t.svg?style=social&label=Star)](https://github.com/your-repo/rei-t)
-[![GitHub forks](https://img.shields.io/github/forks/your-repo/rei-t.svg?style=social&label=Fork)](https://github.com/your-repo/rei-t/fork)
+[![GitHub stars](https://img.shields.io/github/stars/Harrypatria/REI-T-Assessment.svg?style=social&label=Star)](https://github.com/Harrypatria/REI-T-Assessment)
+[![GitHub forks](https://img.shields.io/github/forks/Harrypatria/REI-T-Assessment.svg?style=social&label=Fork)](https://github.com/Harrypatria/REI-T-Assessment/fork)
+
+</div>
+
+---
+
+<div align="center">
+
+## 🌟 Support This Project
+
+**Follow me on GitHub**: [![GitHub Follow](https://img.shields.io/github/followers/Harrypatria?style=social)](https://github.com/Harrypatria?tab=followers)
+
+**Star this repository**: [![GitHub Star](https://img.shields.io/github/stars/Harrypatria/REI-T-Assessment?style=social)](https://github.com/Harrypatria/REI-T-Assessment/stargazers)
+
+**Connect on LinkedIn**: [![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harry-patria/)
+
+Click the buttons above to show your support!
 
 </div>
