@@ -1009,8 +1009,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📧 Contact
 
-**Principal Investigator**: Dr. Harry Patria  
-**Institution**: MS Business Analytics at Imperial College London  
+**Researcher**: Dr. Harry Patria  
 **Title**: CEO, Chief Data AI at Patria & Co.  
 **Email**: [harry.patria23@imperial.ac.uk](mailto:harry.patria23@imperial.ac.uk)  
 **ORCID**: [0000-0002-7844-538X](https://orcid.org/my-orcid?orcid=0000-0002-7844-538X)
