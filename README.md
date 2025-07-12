@@ -387,9 +387,107 @@ All items utilize a **7-point Likert scale**:
 
 ---
 
-I've reviewed the LaTeX formatting in your GitHub markdown README and identified several issues causing display errors. The main problems were incorrect LaTeX syntax, misplaced delimiters, improper use of `frac` and `sum`, and inconsistent math formatting.
+## 📐 Mathematical Formulations
 
-Here are the key revisions I've made:
+### Primary Scoring Protocol
+
+#### Analytical Temporal Processing Score
+
+$$
+\text{REI}_{T-A} = \frac{1}{22} \sum_{i=1}^{22} A_i
+$$
+
+Where $A_i$ is the response score for the $i$-th analytical item.
+
+#### Experiential Temporal Processing Score
+
+$$
+\text{REI}_{T-E} = \frac{1}{22} \sum_{i=1}^{22} E_i
+$$
+
+Where $E_i$ is the response score for the $i$-th experiential item.
+
+#### Temporal Processing Difference Score
+
+$$
+\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}
+$$
+
+#### Temporal Cognitive Style Classification
+
+$$
+\text{Temporal Style} =
+\begin{cases}
+\text{Analytical}, & \text{if } \text{REI}_{T-A} > \text{REI}_{T-E} + 0.5 \\
+\text{Experiential}, & \text{if } \text{REI}_{T-E} > \text{REI}_{T-A} + 0.5 \\
+\text{Versatile}, & \text{if } |\text{REI}_{T-A} - \text{REI}_{T-E}| \leq 0.5
+\end{cases}
+$$
+
+### Subscale Decomposition
+
+#### Analytical Subscales
+
+$$
+\text{TT}_{\text{Analytical}} = \frac{1}{8} \sum_{i=1}^{8} \text{TT}_i
+$$
+
+$$
+\text{TE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=9}^{15} \text{TE}_i
+$$
+
+$$
+\text{EE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=16}^{22} \text{EE}_i
+$$
+
+#### Experiential Subscales
+
+$$
+\text{TT}_{\text{Experiential}} = \frac{1}{8} \sum_{i=23}^{30} \text{TT}_i
+$$
+
+$$
+\text{TE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=31}^{37} \text{TE}_i
+$$
+
+$$
+\text{EE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=38}^{44} \text{EE}_i
+$$
+
+---
+
+### Temporal Behavioral Pattern Detection
+
+#### Inter-Prompt Interval Analysis
+
+**Mean Inter-Prompt Interval:**
+
+$$
+\mu_{\text{IPI},i} = \frac{1}{n_i - 1} \sum_{j=1}^{n_i - 1} (t_{j+1,i} - t_{j,i})
+$$
+
+**Temporal Variance:**
+
+$$
+\sigma_{\text{IPI},i}^2 = \frac{1}{n_i - 2} \sum_{j=1}^{n_i - 1} ( \text{IPI}_{j,i} - \mu_{\text{IPI},i} )^2
+$$
+
+**Temporal Regularity Index:**
+
+$$
+\text{TRI}_i = 1 - \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}
+$$
+
+**Coefficient of Variation:**
+
+$$
+\text{CV}_i = \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}
+$$
+
+Where:
+- $n_i$ is the total number of prompts by individual $i$
+- $t_{j,i}$ is the timestamp of the $j$-th prompt by individual $i$
+- $\text{IPI}_{j,i}$ is the inter-prompt interval between the $j$-th and $(j+1)$-th prompts for individual $i$
 
 1. **Corrected Primary Scoring Formulas**:
 ```latex
