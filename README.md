@@ -395,6 +395,26 @@ All items utilize a **7-point Likert scale**:
 
 ### Primary Scoring Protocol
 
+$$
+\text{REI}_{T-A} = \frac{1}{22} \sum_{i=1}^{22} A_{\text{item}_i}
+$$
+
+$$
+\text{REI}_{T-E} = \frac{1}{22} \sum_{i=1}^{22} E_{\text{item}_i}
+$$
+
+$$
+\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}
+$$
+
+$$
+\text{Temporal Style} = \begin{cases} 
+\text{Analytical} & \text{if } \text{REI}_{T-A} > \text{REI}_{T-E} + 0.5 \\
+\text{Experiential} & \text{if } \text{REI}_{T-E} > \text{REI}_{T-A} + 0.5 \\
+\text{Versatile} & \text{if } |\text{REI}_{T-A} - \text{REI}_{T-E}| \leq 0.5
+\end{cases}
+$$
+
 #### Analytical Temporal Processing Score
 
 $$
