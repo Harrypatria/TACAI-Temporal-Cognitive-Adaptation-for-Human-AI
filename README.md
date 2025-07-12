@@ -391,49 +391,107 @@ All items utilize a **7-point Likert scale**:
 
 ### Primary Scoring Protocol
 
-Analytical Temporal Processing Score
-$$ \text{REI}{T-A} = \frac{1}{22} \sum{i=1}^{22} A_{\text{item}_i} $$
+## 📐 Mathematical Formulations
 
-Where 
-A
-item
-i
- represents the response to analytical item 
-i
-.
+### Primary Scoring Protocol
 
-Experiential Temporal Processing Score
-$$ \text{REI}{T-E} = \frac{1}{22} \sum{i=1}^{22} E_{\text{item}_i} $$
+#### Analytical Temporal Processing Score
 
-Where 
-E
-item
-i
- represents the response to experiential item 
-i
-.
+$$
+\text{REI}_{T-A} = \frac{1}{22} \sum_{i=1}^{22} A_{\text{item}_i}
+$$
 
-Temporal Processing Difference Score
-$$ \text{TPD} = \text{REI}{T-A} - \text{REI}{T-E} $$
+Where $A_{\text{item}_i}$ represents the response to analytical item $i$.
 
-Temporal Cognitive Style Classification
-$$ \text{Temporal Style} = \begin{cases} \text{Analytical} & \text{if } \text{REI}{T-A} > \text{REI}{T-E} + 0.5 \ \text{Experiential} & \text{if } \text{REI}{T-E} > \text{REI}{T-A} + 0.5 \ \text{Versatile} & \text{if } |\text{REI}{T-A} - \text{REI}{T-E}| \leq 0.5 \end{cases} $$
+#### Experiential Temporal Processing Score
 
-Subscale Decomposition
-Analytical Subscales
-$$ \text{TT}{\text{Analytical}} = \frac{1}{8} \sum{i=1}^{8} \text{TT}_{\text{item}_i} $$
+$$
+\text{REI}_{T-E} = \frac{1}{22} \sum_{i=1}^{22} E_{\text{item}_i}
+$$
 
-$$ \text{TE}{\text{Analytical}} = \frac{1}{7} \sum{i=9}^{15} \text{TE}_{\text{item}_i} $$
+Where $E_{\text{item}_i}$ represents the response to experiential item $i$.
 
-$$ \text{EE}{\text{Analytical}} = \frac{1}{7} \sum{i=16}^{22} \text{EE}_{\text{item}_i} $$
+#### Temporal Processing Difference Score
 
-Experiential Subscales
-$$ \text{TT}{\text{Experiential}} = \frac{1}{8} \sum{i=23}^{30} \text{TT}_{\text{item}_i} $$
+$$
+\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}
+$$
 
-$$ \text{TE}{\text{Experiential}} = \frac{1}{7} \sum{i=31}^{37} \text{TE}_{\text{item}_i} $$
+#### Temporal Cognitive Style Classification
 
-$$ \text{EE}{\text{Experiential}} = \frac{1}{7} \sum{i=38}^{44} \text{EE}_{\text{item}_i} $$
+$$
+\text{Temporal Style} =
+\begin{cases}
+\text{Analytical} & \text{if } \text{REI}_{T-A} > \text{REI}_{T-E} + 0.5 \\
+\text{Experiential} & \text{if } \text{REI}_{T-E} > \text{REI}_{T-A} + 0.5 \\
+\text{Versatile} & \text{if } |\text{REI}_{T-A} - \text{REI}_{T-E}| \leq 0.5
+\end{cases}
+$$
 
+### Subscale Decomposition
+
+#### Analytical Subscales
+
+$$
+\text{TT}_{\text{Analytical}} = \frac{1}{8} \sum_{i=1}^{8} \text{TT}_{\text{item}_i}
+$$
+
+$$
+\text{TE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=9}^{15} \text{TE}_{\text{item}_i}
+$$
+
+$$
+\text{EE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=16}^{22} \text{EE}_{\text{item}_i}
+$$
+
+#### Experiential Subscales
+
+$$
+\text{TT}_{\text{Experiential}} = \frac{1}{8} \sum_{i=23}^{30} \text{TT}_{\text{item}_i}
+$$
+
+$$
+\text{TE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=31}^{37} \text{TE}_{\text{item}_i}
+$$
+
+$$
+\text{EE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=38}^{44} \text{EE}_{\text{item}_i}
+$$
+
+---
+
+### Temporal Behavioral Pattern Detection
+
+#### Inter-Prompt Interval Analysis
+
+**Mean Inter-Prompt Interval:**
+
+$$
+\mu_{\text{IPI},i} = \frac{1}{n_i - 1} \sum_{j=1}^{n_i - 1} (t_{\text{prompt},i}^{(j+1)} - t_{\text{prompt},i}^{(j)})
+$$
+
+**Temporal Variance:**
+
+$$
+\sigma_{\text{IPI},i}^2 = \frac{1}{n_i - 2} \sum_{j=1}^{n_i - 1} ( \text{IPI}_i^{(j)} - \mu_{\text{IPI},i} )^2
+$$
+
+**Temporal Regularity Index:**
+
+$$
+\text{TRI}_i = 1 - \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}
+$$
+
+**Coefficient of Variation:**
+
+$$
+\text{CV}_i = \frac{\sigma_{\text{IPI},i}}{\mu_{\text{IPI},i}}
+$$
+
+Where:
+- $n_i$ = total number of prompts by individual $i$
+- $t_{\text{prompt},i}^{(j)}$ = timestamp of $j$-th prompt by individual $i$
+- $\text{IPI}_i^{(j)}$ = inter-prompt interval between prompts $j$ and $j+1$ for individual $i$
 #### Analytical Temporal Processing Score
 
 
