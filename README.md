@@ -1,5 +1,3 @@
-
-```markdown
 # REI-T (Temporal) Assessment Protocol
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -81,7 +79,6 @@ flowchart TB
     B4 --> C1
     C4 --> D1
     D4 --> E[Research Outcomes]
-```
 
 ### Dual-Process Theory in Temporal Cognition
 
