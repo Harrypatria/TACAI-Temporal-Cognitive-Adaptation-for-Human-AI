@@ -1,4 +1,3 @@
-Here is the corrected version of the `readme.md` file with the mathematical formulas updated to proper Markdown syntax. Only the "Mathematical Formulations" section has been modified to ensure the formulas are correctly formatted using LaTeX-style syntax within Markdown.
 
 ```markdown
 # REI-T (Temporal) Assessment Protocol
