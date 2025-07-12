@@ -391,33 +391,6 @@ All items utilize a **7-point Likert scale**:
 
 ### Primary Scoring Protocol
 
-📐 Mathematical Formulations
-Primary Scoring Protocol
-Analytical Temporal Processing Score
-$$\text{REI}_{T-A} = \frac{1}{22} \sum_{i=1}^{22} A_{\text{item}_i}$$
-Where $A_{\text{item}_i}$ represents the response to analytical item $i$.
-Experiential Temporal Processing Score
-$$\text{REI}_{T-E} = \frac{1}{22} \sum_{i=1}^{22} E_{\text{item}_i}$$
-Where $E_{\text{item}_i}$ represents the response to experiential item $i$.
-Temporal Processing Difference Score
-$$\text{TPD} = \text{REI}_{T-A} - \text{REI}_{T-E}$$
-Temporal Cognitive Style Classification
-$$\text{Temporal Style} = 
-\begin{cases} 
-\text{Analytical} & \text{if } \text{REI}_{T-A} > \text{REI}_{T-E} + 0.5 \\
-\text{Experiential} & \text{if } \text{REI}_{T-E} > \text{REI}_{T-A} + 0.5 \\
-\text{Versatile} & \text{if } |\text{REI}_{T-A} - \text{REI}_{T-E}| \leq 0.5
-\end{cases}$$
-Subscale Decomposition
-Analytical Subscales
-$$\text{TT}_{\text{Analytical}} = \frac{1}{8} \sum_{i=1}^{8} \text{TT}_{\text{item}_i}$$
-$$\text{TE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=9}^{15} \text{TE}_{\text{item}_i}$$
-$$\text{EE}_{\text{Analytical}} = \frac{1}{7} \sum_{i=16}^{22} \text{EE}_{\text{item}_i}$$
-Experiential Subscales
-$$\text{TT}_{\text{Experiential}} = \frac{1}{8} \sum_{i=23}^{30} \text{TT}_{\text{item}_i}$$
-$$\text{TE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=31}^{37} \text{TE}_{\text{item}_i}$$
-$$\text{EE}_{\text{Experiential}} = \frac{1}{7} \sum_{i=38}^{44} \text{EE}_{\text{item}_i}$$
-
 #### Analytical Temporal Processing Score
 
 $$
