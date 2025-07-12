@@ -393,9 +393,9 @@ All items utilize a **7-point Likert scale**:
 
 #### Analytical Temporal Processing Score
 
-$$
+$
 \text{REI}_{T-A} = \frac{1}{22} \sum_{i=1}^{22} A_i
-$$
+$
 
 Where $A_i$ is the response score for the $i$-th analytical item.
 
