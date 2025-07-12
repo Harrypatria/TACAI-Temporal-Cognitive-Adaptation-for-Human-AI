@@ -49,36 +49,6 @@ The **Rational Experiential Inventory - Temporal (REI-T)** represents a novel ps
 
 ### Overall Research Framework
 
-```mermaid
-flowchart TB
-    subgraph "Phase 1: Assessment Development"
-        A1[Literature Review] --> A2[Item Development]
-        A2 --> A3[Expert Validation]
-        A3 --> A4[REI-T Scale Creation]
-    end
-    
-    subgraph "Phase 2: Data Collection"
-        B1[CS Survey Administration] --> B2[Temporal Behavior Logging]
-        B2 --> B3[Cognitive Load Measurement]
-        B3 --> B4[Performance Metrics]
-    end
-    
-    subgraph "Phase 3: ML Development"
-        C1[Feature Engineering] --> C2[Model Training]
-        C2 --> C3[Temporal Style Classification]
-        C3 --> C4[Adaptation Algorithm]
-    end
-    
-    subgraph "Phase 4: Experimental Validation"
-        D1[Control Group<br/>No Adaptation] --> D2[Treatment Group<br/>Temporal Adaptation]
-        D2 --> D3[Performance Comparison]
-        D3 --> D4[Effectiveness Analysis]
-    end
-    
-    A4 --> B1
-    B4 --> C1
-    C4 --> D1
-    D4 --> E[Research Outcomes]
 
 ### Dual-Process Theory in Temporal Cognition
 
