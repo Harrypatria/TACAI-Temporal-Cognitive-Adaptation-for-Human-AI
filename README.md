@@ -448,8 +448,8 @@ Where:
 
 **Temporal Predictability:**
 
-$$
-\text{Temporal Predictability}_i(f) = |\text{DFT}\{\text{IPI}_{\text{sequence}_i}\}(f)|^2
+$$ 
+\text{Temporal Predictability}(i, f) = \left| \text{DFT}(\text{IPI}_{\text{sequence}, i})(f) \right|^2 
 $$
 
 **Dominant Frequency Detection:**
