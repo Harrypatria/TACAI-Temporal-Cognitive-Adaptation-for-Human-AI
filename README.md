@@ -393,23 +393,31 @@ All items utilize a **7-point Likert scale**:
 
 #### Analytical Temporal Processing Score
 
-$$ \text{REI}{T-A} = \frac{1}{22} \sum{i=1}^{22} A_i $$
+$$ 
+\text{REI}{T-A} = \frac{1}{22} \sum{i=1}^{22} A_i 
+$$
 
 Where $A_i$ is the response score for the $i$-th analytical item.
 
 ### Experiential Temporal Processing Score
 
-$$ \text{REI}{T-E} = \frac{1}{22} \sum{i=1}^{22} E_i $$
+$$ 
+\text{REI}{T-E} = \frac{1}{22} \sum{i=1}^{22} E_i 
+$$
 
 Where $E_i$ is the response score for the $i$-th experiential item.
 
 Temporal Processing Difference Score
 
-$$ \text{TPD} = \text{REI}{T-A} - \text{REI}{T-E} $$
+$$ 
+\text{TPD} = \text{REI}{T-A} - \text{REI}{T-E} 
+$$
 
 Temporal Cognitive Style Classification
 
-$$ \text{Temporal Style} = \begin{cases} \text{Analytical}, & \text{if } \text{REI}{T-A} > \text{REI}{T-E} + 0.5 \ \text{Experiential}, & \text{if } \text{REI}{T-E} > \text{REI}{T-A} + 0.5 \ \text{Versatile}, & \text{if } |\text{REI}{T-A} - \text{REI}{T-E}| \leq 0.5 \end{cases} $$
+$$ 
+\text{Temporal Style} = \begin{cases} \text{Analytical}, & \text{if } \text{REI}{T-A} > \text{REI}{T-E} + 0.5 \ \text{Experiential}, & \text{if } \text{REI}{T-E} > \text{REI}{T-A} + 0.5 \ \text{Versatile}, & \text{if } |\text{REI}{T-A} - \text{REI}{T-E}| \leq 0.5 \end{cases} 
+$$
 
 **Mean Inter-Prompt Interval:**
 
