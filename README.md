@@ -427,20 +427,21 @@ $$
 
 **Temporal Variance:**
 
-$$
-\sigma_{\text{IPI},i}^2 = \frac{1}{n_i-2} \sum_{j=1}^{n_i-1} \left(\text{IPI}_i^{(j)} - \mu_{\text{IPI},i}\right)^2
+
+$$ 
+\sigma_{\text{IPI},i}^2 = \frac{1}{n_i-2} \sum_{j=1}^{n_i-1} \left(\text{IPI}_i^{(j)} - \mu(\text{IPI}_i)\right)^2 
 $$
 
-**Temporal Regularity Index:**
+## Temporal Regularity Index
 
-$$
-\text{TRI}_i = 1 - \left(\frac{\sigma_{\text{IPI},i}{\mu_{\text{IPI},i}}\right)
+$$ 
+\text{TRI}_i = 1 - \left(\frac{\sigma(\text{IPI}_i)}{\mu(\text{IPI}_i)}\right) 
 $$
 
-**Coefficient of Variation:**
+## Coefficient of Variation
 
-$$
-\text{CV}_i = \frac{\sigma_{\text{IPI},i}{\mu_{\text{IPI},i}
+$$ 
+\text{CV}_i = \frac{\sigma(\text{IPI}_i)}{\mu(\text{IPI}_i)} 
 $$
 
 Where:
