@@ -455,25 +455,25 @@ Where:
 
 #### Discrete Fourier Transform Analysis
 
-**Temporal Predictability:**
+#### Temporal Predictability
 
 $$ 
 \text{Temporal Predictability}(i, f) = \left| \text{DFT}(\text{IPI}_{\text{sequence}, i})(f) \right|^2 
 $$
 
-**Dominant Frequency Detection:**
+#### Dominant Frequency Detection
 
 $$
 \text{Dominant Frequency}_i = \arg\max_f \left[\text{Rhythm Strength}_i(f)\right]
 $$
 
-**Temporal Predictability Metric:**
+#### Temporal Predictability Metric:
 
 $$
 \text{Temporal Predictability}_i = \frac{\max_f\left[\text{Rhythm Strength}_i(f)\right]}{\sum_f\left[\text{Rhythm Strength}_i(f)\right]}
 $$
 
-**Spectral Entropy:**
+#### Spectral Entropy
 
 $$
 \text{Spectral Entropy}_i = -\sum_f P_i(f) \times \log_2\left(P_i(f)\right)
@@ -527,7 +527,9 @@ $$
 
 #### Ensemble Classification Framework
 
-$$ P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i) $$
+$$ 
+P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i) 
+$$
 
 #### Constraint
 
