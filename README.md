@@ -499,26 +499,26 @@ $$
 
 **Integral Cognitive Load:**
 
-$$
-\text{CL}_{\text{integral},i} = \frac{1}{T_i} \int_0^{T_i} \text{CL}_{\text{temporal},i}(t) \, dt
-$$
-
-**Load Variance:**
-
-$$
-\text{CL}_{\text{variance},i} = \frac{1}{T_i} \int_0^{T_i} \left(\text{CL}_{\text{temporal},i}(t) - \text{CL}_{\text{integral},i}\right)^2 dt
+$$ 
+\text{CL}(\text{integral},i) = \frac{1}{T_i} \int_0^{T_i} \text{CL}(\text{temporal},i)(t) \, dt 
 $$
 
-**Peak Load:**
+## Load Variance
 
-$$
-\text{Peak Load}_i = \max_t\left[\text{CL}_{\text{temporal},i}(t)\right]
+$$ 
+\text{CL}(\text{variance},i) = \frac{1}{T_i} \int_0^{T_i} \left(\text{CL}(\text{temporal},i)(t) - \text{CL}(\text{integral},i)\right)^2 dt 
 $$
 
-**Load Smoothness:**
+## Peak Load
 
+$$ 
+\text{Peak Load}_i = \max_t \left[\text{CL}(\text{temporal},i)(t)\right] 
 $$
-\text{Load Smoothness}_i = 1 - \frac{\sigma_{\text{CL},i}}{\mu_{\text{CL},i}}
+
+## Load Smoothness
+
+$$ 
+\text{Load Smoothness}_i = 1 - \frac{\sigma(\text{CL},i)}{\mu(\text{CL},i)} 
 $$
 
 ---
