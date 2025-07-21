@@ -503,19 +503,19 @@ $$
 \text{CL}(\text{integral},i) = \frac{1}{T_i} \int_0^{T_i} \text{CL}(\text{temporal},i)(t) \, dt 
 $$
 
-## Load Variance
+#### Load Variance
 
 $$ 
 \text{CL}(\text{variance},i) = \frac{1}{T_i} \int_0^{T_i} \left(\text{CL}(\text{temporal},i)(t) - \text{CL}(\text{integral},i)\right)^2 dt 
 $$
 
-## Peak Load
+#### Peak Load
 
 $$ 
 \text{Peak Load}_i = \max_t \left[\text{CL}(\text{temporal},i)(t)\right] 
 $$
 
-## Load Smoothness
+#### Load Smoothness
 
 $$ 
 \text{Load Smoothness}_i = 1 - \frac{\sigma(\text{CL},i)}{\mu(\text{CL},i)} 
