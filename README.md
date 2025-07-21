@@ -526,18 +526,17 @@ $$
 
 #### Ensemble Classification Framework
 
-$$
-\P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i)
-$$
+$$ P_{\text{ensemble},i}(\text{class}|\mathbf{F}_i) = w_1 P_{\text{BERT}}(\text{class}|\text{text}_i) + w_2 P_{\text{LSTM}}(\text{class}|\text{temporal}_i) + w_3 P_{\text{SVM}}(\text{class}|\text{behavioral}_i) + w_4 P_{\text{RF}}(\text{class}|\text{combined}_i) $$
 
-**Constraint:** $\sum_{k=1}^4 w_k = 1, \quad w_k \geq 0$
+#### Constraint
+
+$$ \sum_{k=1}^{4} w_k = 1, \quad w_k \geq 0 $$
 
 #### Temporal Feature Vector
 
-$$
-\mathbf{F}_{\text{temporal},i} = \begin{bmatrix}
-\mu_{\text{IPI},i} \\
-\sigma_{\text{IPI},i} \\
+$$ \mathbf{F}(\text{temporal}_i) = \begin{bmatrix} 
+\mu(\text{IPI}_i) \\
+\sigma(\text{IPI}_i) \\
 \text{TRI}_i \\
 \text{Burst Frequency}_i \\
 \text{Sequential Index}_i \\
@@ -548,8 +547,7 @@ $$
 \text{Spectral Entropy}_i \\
 \text{Peak Load}_i \\
 \text{Load Smoothness}_i
-\end{bmatrix}
-$$
+\end{bmatrix} $$
 
 #### Temporal Adaptation Effectiveness (TAE)
 
