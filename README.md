@@ -1021,13 +1021,11 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 @article{rei_t_2025,
   title={The Rational Experiential Inventory-Temporal (REI-T): A Novel Assessment of Individual Differences in Temporal Processing Styles},
   author={Patria, Harry},
-  journal={Journal of Temporal Cognition and Human-Computer Interaction},
   volume={X},
   number={X},
   pages={XX-XX},
   year={2025},
-  publisher={Academic Press},
-  doi={10.1000/rei-t-temporal},
+  publisher={GitHub},
   note={CEO, Chief Data AI at Patria \& Co.}
 }
 ```
