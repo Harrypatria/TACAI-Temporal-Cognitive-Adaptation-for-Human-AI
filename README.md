@@ -1037,8 +1037,8 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 **🔬 REI-T Assessment Protocol**  
 *Advancing the Science of Temporal Cognition*
 
-[![GitHub stars](https://img.shields.io/github/stars/Harrypatria/REI-T-Assessment.svg?style=social&label=Star)](https://github.com/Harrypatria/REI-T-Assessment)
-[![GitHub forks](https://img.shields.io/github/forks/Harrypatria/REI-T-Assessment.svg?style=social&label=Fork)](https://github.com/Harrypatria/REI-T-Assessment/fork)
+[![GitHub stars](https://img.shields.io/github/stars/Harrypatria/REI-T-Assessment.svg?style=social&label=Star)](https://github.com/Harrypatria/TACAI-Temporal-Cognitive-Adaptation-for-Human-AI)
+[![GitHub forks](https://img.shields.io/github/forks/Harrypatria/REI-T-Assessment.svg?style=social&label=Fork)](https://github.com/Harrypatria/TACAI-Temporal-Cognitive-Adaptation-for-Human-AI/fork)
 
 </div>
 
