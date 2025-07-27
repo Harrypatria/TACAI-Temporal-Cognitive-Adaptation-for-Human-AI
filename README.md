@@ -1044,14 +1044,11 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 
 ---
 
+
 <div align="center">
 
 ## 🌟 Support This Project
-
 **Follow me on GitHub**: [![GitHub Follow](https://img.shields.io/github/followers/Harrypatria?style=social)](https://github.com/Harrypatria?tab=followers)
-
-**Star this repository**: [![GitHub Star](https://img.shields.io/github/stars/Harrypatria/REI-T-Assessment?style=social)](https://github.com/Harrypatria/TACAI-Temporal-Cognitive-Adaptation-for-Human-AI)
-
 **Connect on LinkedIn**: [![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harry-patria/)
 
 Click the buttons above to show your support!
