@@ -1044,7 +1044,6 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 
 ---
 
-
 <div align="center">
 
 ## 🌟 Support This Project
