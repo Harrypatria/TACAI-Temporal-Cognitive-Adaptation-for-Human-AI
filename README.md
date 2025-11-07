@@ -1044,6 +1044,11 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 
 ---
 
+Public discussion on this temporal reasoning
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7392079639973625856?collapsed=1" height="669" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+---
+
 <div align="center">
 
 ## 🌟 Support This Project
