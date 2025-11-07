@@ -1045,7 +1045,11 @@ If you use the REI-T Assessment Protocol in your research, please cite:
 ---
 Public discussion on this temporal reasoning
 
-[![LinkedIn Discussion](https://placehold.co/504x669/0a66c2/white?text=View+on+LinkedIn)](https://www.linkedin.com/posts/activity-7392079639973625856)
+<div class="linkedin-embed">
+  <a href="https://www.linkedin.com/posts/activity-7392079639973625856" target="_blank">
+    View the temporal reasoning discussion on LinkedIn
+  </a>
+</div>
 ---
 
 <div align="center">
